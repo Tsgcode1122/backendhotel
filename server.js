@@ -11,7 +11,11 @@ const bookingsRoute = require("./routes/bookingsRoute");
 // Middleware
 app.use(express.json());
 app.use(cors());
-
+app.use(
+  cors({
+    origin: "https://tossolhotel.onrender.com",
+  }),
+);
 // Routes
 app.get("/", (req, res) => res.send("hello"));
 app.use("/api/rooms", roomsRoute);
