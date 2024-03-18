@@ -17,7 +17,7 @@ app.use(
   }),
 );
 // Routes
-app.get("/", (req, res) => res.send("hello"));
+app.get("/", (req, res) => res.send("tossolhhotel api"));
 app.use("/api/rooms", roomsRoute);
 app.use("/api/users", usersRoute);
 app.use("/api/bookings", bookingsRoute);
