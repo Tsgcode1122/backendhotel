@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 app.use(
   cors({
-    origin: "https://tossolhotel.onrender.com",
+    origin: "https://tossolhotel.onrender.com/",
   }),
 );
 // Routes
